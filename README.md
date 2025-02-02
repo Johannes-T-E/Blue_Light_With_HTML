@@ -14,8 +14,6 @@ This project runs on an ESP32 to control an LED via HTTP requests and WebSocket 
 └── Blue_Light_With_HTML.ino
 ```
 
-*Note:* If you are using the Arduino IDE, ensure that your main sketch file is in the root (or adjust the folder structure accordingly).
-
 ## Prerequisites
 
 - **Hardware:**  

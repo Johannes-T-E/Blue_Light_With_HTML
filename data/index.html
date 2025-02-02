@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ESP32 LED Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ESP32 LED Control</h1>
+    
+    <div class="controls">
+      <button id="toggleBtn">Toggle LED</button>
+      
+      <div class="flash-controls">
+        <h2>Flash LED</h2>
+        <label for="onDuration">On Duration (ms):</label>
+        <input type="number" id="onDuration" value="1000" min="100" step="100">
+        
+        <label for="offDuration">Off Duration (ms):</label>
+        <input type="number" id="offDuration" value="1000" min="100" step="100">
+        
+        <button id="startFlashBtn">Start Flashing</button>
+        <button id="stopFlashBtn">Stop Flashing</button>
+      </div>
+    </div>
+    
+    <div class="status">
+      <p>LED Status: <span id="status">OFF</span></p>
+      <div id="digitalLed" class="led-off"></div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* style.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #232323;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #dedede;
+}
+
+.container {
+  background-color: #3c3b3b;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #cdcdcd;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.flash-controls {
+  margin-top: 20px;
+  color: #dedede;
+}
+
+.flash-controls label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.flash-controls input {
+  width: 80%;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#status {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #dedede;
+}
+
+#digitalLed {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  /* background-color: #5555AA; */
+  transition: background-color 0.0s ease;
+}
+
+.led-on {
+  background-color: #0000FF; /* Blue when ON */
+  box-shadow: 0 0px 30px rgba(21, 0, 255, 0.806);
+}
+
+.led-off {
+  background-color: #1c1c47; /* Darker blue when OFF */
+}
